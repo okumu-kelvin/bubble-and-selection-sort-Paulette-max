@@ -6,8 +6,8 @@ def bubble_sort(unsorted_list):
         swapped = False
 
         for p in range(0, n - i -1):
-            if unsorted_list[i] > unsorted_list[i + 1]:
-                unsorted_list[i], unsorted_list[i + 1] = unsorted_list[i + 1], unsorted_list[i]
+            if unsorted_list[p] > unsorted_list[p + 1]:
+                unsorted_list[p], unsorted_list[p + 1] = unsorted_list[p + 1], unsorted_list[p]
                 swapped = True
         if not swapped:
             break
